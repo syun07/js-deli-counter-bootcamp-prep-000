@@ -4,13 +4,22 @@ function takeANumber(katzDeli, name) {
 }
 
 
+
 function nowServing(katzDeli) {
-  if (katzDeli.length === 0) {
+  if (katzDeli.length > 0) {
+    return `Currently serving ${katzDeli.shift()}.`;
+  } else if (katzDeli.length === 0) {
     return 'There is nobody waiting to be served!';
-  } else {
-    return (`Currently serving ${katzDeli.shift()}.`);
   }
 }
+
+// function nowServing(katzDeli) {
+//   if (katzDeli.length === 0) {
+//     return 'There is nobody waiting to be served!';
+//   } else {
+//     return (`Currently serving ${katzDeli.shift()}.`);
+//   }
+// }
 
 
 
