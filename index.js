@@ -14,7 +14,11 @@ function nowServing(katzDeli) {
 }
 
 
-function currentLine()
+function currentLine(kazDeli) {
+  if (katzDeli.length > 0) {
+    return `
+  }
+}
 
 
 
