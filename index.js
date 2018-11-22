@@ -18,7 +18,7 @@ function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
     var string = `The line is currently: 1. ${katzDeli[0]}, `
     for (let i = 1; i < katzDeli.length; i++) {
-      string + `${i + 1}. ${katzDeli[i]}, `
+      string += `${i + 1}. ${katzDeli[i]}, `
     }
     return string;
   } else if (katzDeli.length === 0) {
